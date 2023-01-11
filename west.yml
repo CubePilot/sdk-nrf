@@ -31,6 +31,8 @@ manifest:
       url-base: https://github.com/NordicSemiconductor
     - name: memfault
       url-base: https://github.com/memfault
+    - name: cubepilot
+      url-base: https://github.com/cubepilot/
 
   # If not otherwise specified, the projects below should be obtained
   # from the ncs remote.
@@ -49,8 +51,9 @@ manifest:
     # https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/introduction/index.html
     # https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/guides/modules.html
     - name: zephyr
-      repo-path: sdk-zephyr
-      revision: v3.0.99-ncs1-1
+      repo-path: zephyr
+      revision: main
+      remote: cubepilot
       import:
         # In addition to the zephyr repository itself, NCS also
         # imports the contents of zephyr/west.yml at the above
